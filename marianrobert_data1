@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+unsigned int ziua,luna,anul;
+unsigned cod=0;
+int main()
+{
+
+   cout<<"Zi = ";cin>>ziua;
+   cout<<"Luna = ";cin>>luna;
+   cout<<"Anul = ";cin>>anul;
+
+   ziua=ziua<<27;
+   cod=cod|ziua;
+   luna=luna<<23;
+   cod=cod|luna;
+   cod<<cod|anul;
+   cout<<" Codul datei este2 = "<<cod;
+}
